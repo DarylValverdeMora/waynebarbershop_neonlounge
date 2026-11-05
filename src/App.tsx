@@ -7,7 +7,7 @@ import { Header } from './components/sections/Header';
 import { Hero } from './components/sections/Hero';
 import { Services } from './components/sections/Services';
 import { Shop } from './components/sections/Shop';
-import { Local } from './components/sections/Local';
+import { Works } from './components/sections/Works';
 import { Team } from './components/sections/Team';
 import { Hours } from './components/sections/Hours';
 import { Reviews } from './components/sections/Reviews';
@@ -57,13 +57,12 @@ export const App = () => {
       <main id="contenido" tabIndex={-1} className="outline-none">
         <Hero />
         <Services />
-        <Shop />
-        <Local />
-        {divider}
-        <Team />
         <Hours />
-        <Reviews />
+        <Team />
+        <Shop />
+        <Works />
         {divider}
+        <Reviews />
         <Location />
         <FinalCta />
       </main>

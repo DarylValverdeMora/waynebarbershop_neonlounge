@@ -6,9 +6,11 @@ import { cn } from '../ui/cn';
 
 const links = [
   { href: '#servicios', label: 'Servicios' },
-  { href: '#shop', label: "Wayne's Shop" },
-  { href: '#local', label: 'El local' },
   { href: '#horario', label: 'Horario' },
+  { href: '#equipo', label: 'Barberos' },
+  { href: '#shop', label: "Wayne's Shop" },
+  { href: '#trabajos', label: 'Trabajos' },
+  { href: '#resenas', label: 'Reseñas' },
   { href: '#ubicacion', label: 'Ubicación' },
 ] as const;
 
@@ -41,8 +43,8 @@ export const Header = () => {
         <a href="#inicio" className="shrink-0" aria-label="Wayne's Barbershop, ir al inicio">
           <Logo className="w-28 md:w-36" />
         </a>
-        <nav aria-label="Principal" className="hidden lg:block">
-          <ul className="flex items-center gap-7 text-sm font-semibold">
+        <nav aria-label="Principal" className="hidden xl:block">
+          <ul className="flex items-center gap-5 text-sm font-semibold xl:gap-7">
             {links.map((link) => (
               <li key={link.href}>
                 <a href={link.href} className="text-muted transition-colors hover:text-ink">
@@ -56,7 +58,7 @@ export const Header = () => {
           <BookingButton label="Agendar" className="min-h-10 px-4 py-2 text-xs md:min-h-12 md:px-6 md:text-sm" />
           <button
             type="button"
-            className="grid size-11 place-items-center rounded-pill border border-line lg:hidden"
+            className="grid size-11 place-items-center rounded-pill border border-line xl:hidden"
             aria-expanded={open}
             aria-controls="menu-movil"
             aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
@@ -67,7 +69,7 @@ export const Header = () => {
         </div>
       </div>
       {open && (
-        <nav id="menu-movil" aria-label="Menú" className="container-wb pb-6 lg:hidden">
+        <nav id="menu-movil" aria-label="Menú" className="container-wb pb-6 xl:hidden">
           <ul className="grid gap-1 border-t border-line pt-4">
             {links.map((link) => (
               <li key={link.href}>

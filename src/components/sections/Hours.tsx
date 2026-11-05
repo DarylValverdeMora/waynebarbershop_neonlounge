@@ -12,7 +12,7 @@ export const Hours = () => {
     <section id="horario" aria-labelledby="horario-title" className="bg-bg-alt py-20 md:py-32">
       <div className="container-wb grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
         <div>
-          <SectionHeading id="horario-title" index="05" eyebrow="Horario" title="Abrimos todos los días" className="mb-6 md:mb-8" />
+          <SectionHeading id="horario-title" index="02" eyebrow="Horario" title="Abrimos todos los días" className="mb-6 md:mb-8" />
           <StatusPill />
         </div>
         <ul className="grid gap-4">

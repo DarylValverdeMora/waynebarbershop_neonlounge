@@ -32,7 +32,7 @@ export const Shop = () => {
       <div className="container-wb relative">
         <SectionHeading
           id="shop-title"
-          index="02"
+          index="04"
           eyebrow="Tienda"
           title={
             <>

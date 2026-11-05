@@ -13,6 +13,12 @@ npm run build      # genera dist/
 npm run preview    # sirve dist/ para revisar la build
 ```
 
+## Secciones (en orden)
+
+1. Inicio · 2. Servicios · 3. Horario · 4. Barberos · 5. Wayne's Shop · 6. Trabajos (cortes + fotos del local) · 7. Reseñas · 8. Ubicación, y después el CTA final y el footer.
+
+La galería del local es un carrusel con flechas y deslizar táctil; no fija ni secuestra el scroll de la página.
+
 ## Las dos versiones
 
 - `?v=a` → A · Neón Lounge (oscura, azul eléctrico, línea LED).

@@ -6,7 +6,7 @@ import { PlaceholderTag } from '../ui/Placeholder';
 export const Team = () => (
   <section id="equipo" aria-labelledby="equipo-title" className="py-20 md:py-32">
     <div className="container-wb">
-      <SectionHeading id="equipo-title" index="04" eyebrow="Equipo" title="Los barberos" intro={<PlaceholderTag>Nombres, fotos y especialidades</PlaceholderTag>} />
+      <SectionHeading id="equipo-title" index="03" eyebrow="Equipo" title="Los barberos" intro={<PlaceholderTag>Nombres, fotos y especialidades</PlaceholderTag>} />
       <ul className="grid grid-cols-3 gap-3 md:gap-4">
         {team.map((barber) => (
           <li key={barber.id} className="overflow-hidden rounded-card border border-dashed border-line bg-surface" data-reveal>
