@@ -1,0 +1,53 @@
+/* B · Clásica premium: editorial, blanco/negro con acento azul. */
+[data-variant='clasica'] {
+  --wb-bg: #f2f0eb;
+  --wb-bg-alt: #e9e6df;
+  --wb-surface: #ffffff;
+  --wb-surface-2: #e6e2da;
+  --wb-ink: #0a0a0d;
+  --wb-muted: #4a4a52;
+  --wb-line: rgb(10 10 13 / 0.16);
+  --wb-accent: #1432ee;
+  --wb-accent-hover: #0f25b8;
+  --wb-on-accent: #ffffff;
+  --wb-glow: #1432ee;
+  --wb-highlight: #1432ee;
+  --wb-script: #1432ee;
+  --wb-font-display: 'Anton', 'Impact', sans-serif;
+  --wb-font-accent: 'Instrument Serif', Georgia, serif;
+  --wb-radius: 0.125rem;
+  --wb-radius-pill: 0.125rem;
+  color-scheme: light;
+}
+
+/* Bandas oscuras dentro de la versión clara (Wayne's Shop, CTA final). */
+[data-variant='clasica'] .band {
+  --wb-bg: #0a0a0d;
+  --wb-surface: #16161a;
+  --wb-surface-2: #222227;
+  --wb-ink: #f2f0eb;
+  --wb-muted: #b9b7b7;
+  --wb-line: rgb(242 240 235 / 0.16);
+  --wb-glow: #56abe5;
+  --wb-highlight: #56abe5;
+  --wb-script: #56abe5;
+  color-scheme: dark;
+}
+
+/* Fotos en duotono negro + azul para que el neón no pelee con el blanco/negro. */
+[data-variant='clasica'] .duotone {
+  position: relative;
+  isolation: isolate;
+}
+[data-variant='clasica'] .duotone img {
+  filter: grayscale(1) contrast(1.15) brightness(0.95);
+}
+[data-variant='clasica'] .duotone::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #1432ee;
+  mix-blend-mode: screen;
+  opacity: 0.32;
+  pointer-events: none;
+}

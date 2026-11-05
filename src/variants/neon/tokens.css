@@ -1,0 +1,28 @@
+/* A · Neón Lounge: el local hecho página. */
+:root,
+[data-variant='neon'] {
+  --wb-bg: #0a0a0d;
+  --wb-bg-alt: #0b0f2e;
+  --wb-surface: #131317;
+  --wb-surface-2: #1c1c1f;
+  --wb-ink: #f7f8f8;
+  --wb-muted: #a9b6c8;
+  --wb-line: rgb(86 210 254 / 0.16);
+  --wb-accent: #1432ee;
+  --wb-accent-hover: #265ff7;
+  --wb-on-accent: #ffffff;
+  --wb-glow: #56d2fe;
+  --wb-highlight: #5ed6d4;
+  --wb-script: #56abe5;
+  --wb-font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  --wb-font-accent: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  --wb-radius: 1.25rem;
+  --wb-radius-pill: 999px;
+  color-scheme: dark;
+}
+
+[data-variant='neon'] .band {
+  --wb-bg: #070a24;
+  --wb-surface: #0e1238;
+  --wb-surface-2: #141a4a;
+}
